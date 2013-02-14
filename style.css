@@ -38,8 +38,8 @@ a {
     padding: 5px 9px;
 }
 img {
-    max-width: 90%;
-    max-height: 90%;
+    width: auto;
+height: 90%;
 }
 img.border {
     border: 10px solid #fefefe;
