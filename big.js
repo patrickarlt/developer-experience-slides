@@ -11,7 +11,7 @@ window.onload = function() {
     e.style.fontSize = i + 'px';
     if (e.firstChild.firstChild.nodeName.toLowerCase() === 'img') {
       if ( e.firstChild.firstChild.title == "background" ) {
-        document.body.style.background = 'url(' + e.firstChild.firstChild.src + ') no-repeat';
+        document.body.style.background = 'url(' + e.firstChild.firstChild.src + ') no-repeat 50% center';
         e.firstChild.firstChild.style.display = 'none';
       } else {
         if ( e.firstChild.firstChild.title == "border" ) {
@@ -24,7 +24,7 @@ window.onload = function() {
     }
     while ( e.offsetWidth > window.innerWidth/1.1 || e.offsetHeight > window.innerHeight/1.5 ) {
       e.style.fontSize = (i -= i/1.6180339887498948482045868343656381177203091798057628) + 'px';
-      // console.log(e.style.fontSize);
+      console.log(e.style.fontSize);
       e.style.left = ( window.innerWidth - e.offsetWidth )/2 + 'px';
       e.style.top = ( window.innerHeight - e.offsetHeight )/2 + 'px';
     }
